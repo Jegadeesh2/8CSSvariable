@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>8CSSvariable</title>
+  </head>
+  <body>
+
+    <!-- HTML -->
+
+    <div class="container">
+      <h1>This is my h1 text</h1>
+      <button id="primary-btn">Primary</button><br />
+      <h2>This is my h2 text</h2>
+      <button id="secondary-btn">Secondary</button>
+    </div>
+  </body>
+
+  <!-- CSS -->
+
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,500;0,700;0,900;1,300;1,400;1,800;1,900&display=swap");
+
+    :root {
+      --primary-clr: rgb(255, 21, 21);
+      --secondary-clr: rgb(175, 2, 2);
+      --btn-clr: rgb(252, 251, 224);
+    }
+    body {
+      font-family: "Raleway", sans-serif;
+      background-image: linear-gradient(
+        92.7deg,
+        rgba(245, 212, 212, 1) 8.5%,
+        rgba(252, 251, 224, 1) 90.2%
+      );
+    }
+    .container {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+    button {
+      width: 10rem;
+      font-family: "Raleway", sans-serif;
+      font-size: 20px;
+      font-weight: bold;
+      padding: 10px;
+      text-align: center;
+    }
+    h1 {
+      color: var(--primary-clr);
+    }
+    h2 {
+      color: var(--secondary-clr);
+    }
+    #primary-btn {
+      background-color: var(--btn-clr);
+      color: var(--primary-clr);
+    }
+    #secondary-btn {
+      background-color: var(--btn-clr);
+      color: var(--primary-clr);
+    }
+  </style>
+
+  <!-- SCRIPT -->
+
+  <script></script>
+</html>
